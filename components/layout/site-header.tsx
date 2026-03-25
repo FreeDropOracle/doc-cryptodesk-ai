@@ -1,5 +1,7 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Github } from 'lucide-react';
+import logoMark from '@/public/logo.png';
 import { DocSearch } from '@/components/docs/doc-search';
 import { ThemeToggle } from '@/components/theme/theme-toggle';
 import { Badge } from '@/components/ui/badge';
@@ -10,16 +12,19 @@ export const SiteHeader = () => {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/80 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4">
-          <Link className="flex items-center gap-3.5" href="/">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-black/80 p-1.5 shadow-glow">
-              <img
+          <Link className="flex items-center gap-4" href="/">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-black/85 p-1 shadow-glow">
+              <Image
                 alt="CryptoDesk AI logo"
-                className="h-full w-full object-contain"
-                src="/logo.png"
+                className="h-11 w-11 object-contain"
+                height={44}
+                priority
+                src={logoMark}
+                width={44}
               />
             </div>
             <div className="leading-tight">
-              <div className="text-[1.05rem] font-semibold text-white">CryptoDesk AI</div>
+              <div className="text-[1.08rem] font-semibold text-white">CryptoDesk AI</div>
               <div className="mt-0.5 text-xs text-slate-400">Docs and release hub</div>
             </div>
           </Link>
