@@ -1,5 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import { Github, Sparkles } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { DocSearch } from '@/components/docs/doc-search';
 import { ThemeToggle } from '@/components/theme/theme-toggle';
 import { Badge } from '@/components/ui/badge';
@@ -11,8 +12,8 @@ export const SiteHeader = () => {
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4">
           <Link className="flex items-center gap-3" href="/">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-primary via-secondary to-accent shadow-glow">
-              <Sparkles className="h-5 w-5 text-white" />
+            <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-white/10 bg-black/50 p-1 shadow-glow">
+              <Image alt="CryptoDesk AI brand mark" fill priority sizes="44px" src="/brand-mark.svg" />
             </div>
             <div>
               <div className="font-semibold text-white">CryptoDesk AI</div>

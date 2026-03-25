@@ -1,27 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="0%" stop-color="#0b1120" />
       <stop offset="100%" stop-color="#111827" />
     </linearGradient>
     <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#8b5cf6" />
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="hex" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f3ff" />
+      <stop offset="100%" stop-color="#a855f7" />
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
-  <circle cx="180" cy="120" r="180" fill="#3b82f6" fill-opacity="0.08" />
-  <circle cx="1040" cy="120" r="150" fill="#8b5cf6" fill-opacity="0.08" />
-  <rect x="96" y="122" width="94" height="94" rx="28" fill="#0f172a" stroke="url(#accent)" stroke-width="5" />
-  <path d="M143 142 171 158v56l-28 16-28-16v-56l28-16Zm0 13-16 9v36l16 9 16-9v-36l-16-9Z" fill="url(#accent)" />
-  <text x="96" y="320" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">
+  <circle cx="220" cy="110" r="180" fill="#8b5cf6" fill-opacity="0.08" />
+  <circle cx="1040" cy="120" r="150" fill="#3b82f6" fill-opacity="0.06" />
+
+  <g transform="translate(92 118) scale(1.45)">
+    <g stroke="#F8FAFC" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M88 38C63 38 44 57 44 82c0 9 3 18 8 25-12 8-20 22-20 38 0 26 21 47 47 47h37" opacity="0.98" stroke-width="10"/>
+      <path d="M98 58H70c-11 0-20 9-20 20v2" stroke-width="8"/>
+      <path d="M98 84H62c-13 0-24 11-24 24v0" stroke-width="8"/>
+      <path d="M98 110H56c-13 0-24 11-24 24v2" stroke-width="8"/>
+      <path d="M98 136H60c-12 0-22 10-22 22v6" stroke-width="8"/>
+      <path d="M98 162H70c-11 0-20 9-20 20v6" stroke-width="8"/>
+      <path d="M98 188H82c-10 0-18 8-18 18v10" stroke-width="8"/>
+      <path d="M74 58v24" stroke-width="8"/>
+      <path d="M66 84v26" stroke-width="8"/>
+      <path d="M60 110v26" stroke-width="8"/>
+      <path d="M66 136v26" stroke-width="8"/>
+      <path d="M76 162v26" stroke-width="8"/>
+      <path d="M88 188v22" stroke-width="8"/>
+      <circle cx="74" cy="58" r="4.5" fill="#0B1120" stroke-width="4"/>
+      <circle cx="66" cy="84" r="4.5" fill="#0B1120" stroke-width="4"/>
+      <circle cx="60" cy="110" r="4.5" fill="#0B1120" stroke-width="4"/>
+      <circle cx="66" cy="136" r="4.5" fill="#0B1120" stroke-width="4"/>
+      <circle cx="76" cy="162" r="4.5" fill="#0B1120" stroke-width="4"/>
+      <circle cx="88" cy="188" r="4.5" fill="#0B1120" stroke-width="4"/>
+      <circle cx="94" cy="84" r="4.5" fill="#C084FC" stroke="#E9D5FF" stroke-width="3"/>
+      <circle cx="92" cy="162" r="4.5" fill="#C084FC" stroke="#E9D5FF" stroke-width="3"/>
+    </g>
+    <g stroke="url(#hex)" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+      <path d="M164 40h28l14 16v28l-14 16h-28l-14-16V56l14-16Z"/>
+      <path d="M196 86h28l14 16v28l-14 16h-28l-14-16v-28l14-16Z"/>
+      <path d="M164 132h28l14 16v28l-14 16h-28l-14-16v-28l14-16Z"/>
+      <path d="M196 178h22l12 14v24l-12 14h-22l-12-14v-24l12-14Z"/>
+      <path d="M132 86h28l14 16v28l-14 16h-28l-14-16v-28l14-16Z" opacity="0.95"/>
+    </g>
+    <g stroke="url(#accent)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M102 196 132 70l29 126" stroke-width="12"/>
+      <path d="M114 146h36" stroke-width="10"/>
+      <path d="M124 126 132 94l8 32" stroke-width="8" opacity="0.92"/>
+      <path d="M168 72v124" stroke-width="12"/>
+      <path d="M156 72h24" stroke-width="8"/>
+      <path d="M156 196h24" stroke-width="8"/>
+    </g>
+  </g>
+
+  <text x="470" y="278" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">
     CryptoDesk AI Docs
   </text>
-  <text x="96" y="390" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="28">
+  <text x="470" y="350" fill="#D8DDF0" font-family="Arial, Helvetica, sans-serif" font-size="28">
     Non-custodial • Simulation-first • Explainable AI
   </text>
-  <text x="96" y="450" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="24">
-    Desktop trading documentation for v1.0.0-alpha.1
+  <text x="470" y="412" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="24">
+    Desktop documentation hub for the CryptoDesk AI product
   </text>
 </svg>
