@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Github } from 'lucide-react';
-import logoMark from '@/public/logo.png';
 import { DocSearch } from '@/components/docs/doc-search';
 import { ThemeToggle } from '@/components/theme/theme-toggle';
 import { Badge } from '@/components/ui/badge';
@@ -19,7 +18,8 @@ export const SiteHeader = () => {
                 className="h-11 w-11 object-contain"
                 height={44}
                 priority
-                src={logoMark}
+                src="/logo.png"
+                unoptimized
                 width={44}
               />
             </div>
