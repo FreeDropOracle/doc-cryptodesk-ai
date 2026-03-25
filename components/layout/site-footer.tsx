@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { productRepo, docsRepo, releasesUrl, discordUrl } from '@/lib/docs-config';
 
 export const SiteFooter = () => {

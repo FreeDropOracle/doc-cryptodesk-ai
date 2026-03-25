@@ -1,4 +1,4 @@
-﻿export interface DocHeading {
+export interface DocHeading {
   id: string;
   title: string;
 }

@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { Github, Sparkles } from 'lucide-react';
 import { DocSearch } from '@/components/docs/doc-search';
 import { ThemeToggle } from '@/components/theme/theme-toggle';

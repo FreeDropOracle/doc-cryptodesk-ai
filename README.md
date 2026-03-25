@@ -1,4 +1,4 @@
-﻿# CryptoDesk AI Docs
+# CryptoDesk AI Docs
 
 Standalone documentation site for **CryptoDesk AI**, built with Next.js 14, Tailwind CSS, and MDX.
 
