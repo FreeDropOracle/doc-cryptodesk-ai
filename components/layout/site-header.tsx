@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Github } from 'lucide-react';
 import { DocSearch } from '@/components/docs/doc-search';
@@ -11,20 +10,17 @@ export const SiteHeader = () => {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/80 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4">
-          <Link className="flex items-center gap-3" href="/">
-            <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-white/10 bg-black/70 shadow-glow">
-              <Image
+          <Link className="flex items-center gap-3.5" href="/">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-black/80 p-1.5 shadow-glow">
+              <img
                 alt="CryptoDesk AI logo"
-                className="object-contain p-0.5"
-                fill
-                priority
-                sizes="44px"
+                className="h-full w-full object-contain"
                 src="/logo.png"
               />
             </div>
-            <div>
-              <div className="font-semibold text-white">CryptoDesk AI</div>
-              <div className="text-xs text-slate-400">Docs and release hub</div>
+            <div className="leading-tight">
+              <div className="text-[1.05rem] font-semibold text-white">CryptoDesk AI</div>
+              <div className="mt-0.5 text-xs text-slate-400">Docs and release hub</div>
             </div>
           </Link>
 
