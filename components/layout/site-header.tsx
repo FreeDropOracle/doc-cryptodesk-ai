@@ -12,8 +12,15 @@ export const SiteHeader = () => {
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4">
           <Link className="flex items-center gap-3" href="/">
-            <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-white/10 bg-black/50 p-1 shadow-glow">
-              <Image alt="CryptoDesk AI brand mark" fill priority sizes="44px" src="/brand-mark.svg" />
+            <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-white/10 bg-black/70 shadow-glow">
+              <Image
+                alt="CryptoDesk AI logo"
+                className="object-contain p-0.5"
+                fill
+                priority
+                sizes="44px"
+                src="/logo.png"
+              />
             </div>
             <div>
               <div className="font-semibold text-white">CryptoDesk AI</div>
