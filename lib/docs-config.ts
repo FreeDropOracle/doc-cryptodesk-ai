@@ -211,7 +211,7 @@ export const productRepo =
 export const docsRepo =
   process.env.NEXT_PUBLIC_DOCS_REPO ?? 'https://github.com/FreeDropOracle/doc-cryptodesk-ai';
 export const releasesUrl = `${productRepo}/releases`;
-export const latestReleaseUrl = `${releasesUrl}/tag/v1.0.0-alpha.1`;
+export const latestReleaseUrl = releasesUrl;
 export const discordUrl =
   process.env.NEXT_PUBLIC_DISCORD_INVITE ?? 'https://discord.gg/your-invite';
 export const siteUrl =
