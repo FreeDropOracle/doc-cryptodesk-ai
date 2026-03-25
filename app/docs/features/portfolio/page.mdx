@@ -1,0 +1,35 @@
+import { Callout } from '@/components/docs/callout';
+
+# Portfolio
+
+The portfolio surface is intentionally conservative in the current release line. It focuses on
+read-only visibility rather than live account mutation.
+
+<h2 id="read-only-preview">Read-Only Preview</h2>
+
+The alpha portfolio view shows sanitized balance and valuation data suitable for renderer display.
+This helps validate exchange connectivity and UI clarity without opening a real execution path.
+
+What to expect:
+
+- total preview balance
+- exchange context such as Binance Testnet
+- timestamped refresh state
+- clean separation from simulation buying power
+
+<h2 id="testnet-context">Testnet Context</h2>
+
+Portfolio preview should be understood in the context of testnet and staged release discipline.
+The goal is to confirm data plumbing and user understanding before expanding operational scope.
+
+<Callout tone="security" title="Renderer-safe data only">
+The renderer receives the information it needs to display portfolio state, not raw secret-bearing
+credential material. That boundary is a core design choice, not an afterthought.
+</Callout>
+
+<h2 id="safety-notes">Safety Notes</h2>
+
+- Portfolio preview is not a custody layer
+- Credentials should never enter renderer storage or browser-like persistence
+- Simulation balances remain separate from exchange preview balances
+- Read-only behavior is a feature of the alpha release, not a missing checkbox

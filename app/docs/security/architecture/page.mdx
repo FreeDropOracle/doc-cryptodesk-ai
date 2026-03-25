@@ -1,0 +1,43 @@
+import { Callout } from '@/components/docs/callout';
+
+# Security Architecture
+
+CryptoDesk AI is built around the idea that security architecture should be visible in both the
+code and the product experience.
+
+<h2 id="non-custodial-by-design">Non-Custodial by Design</h2>
+
+The system is designed so that user credentials remain local to the machine. The product does not
+ask users to hand over custody of exchange credentials or balances to a hosted service.
+
+This affects both engineering and UX:
+
+- secrets do not belong in renderer state
+- secrets do not belong in browser-like storage
+- secrets do not belong in remote custody systems for this product model
+
+<h2 id="credential-storage">Credential Storage</h2>
+
+The documented storage strategy uses:
+
+- OS keychain integration
+- AES-256-GCM encryption for sensitive data paths
+- optional safe-storage wrapping when available
+- no plaintext secrets in logs
+
+<Callout tone="security" title="Encryption spec">
+The project encryption specification documents AES-256-GCM, local master-key generation, keychain
+storage, and authenticated integrity behavior as part of the credential-handling model.
+</Callout>
+
+<h2 id="renderer-boundaries">Renderer Boundaries</h2>
+
+The renderer is not treated as a trusted place for privileged logic. Sensitive operations stay in
+the main process, while preload exposes a narrow validated bridge. This boundary is reinforced by:
+
+- typed IPC contracts
+- Zod validation
+- context isolation
+- CSP-aware renderer posture
+
+The result is a system that tries to reduce both accidental misuse and architecture drift.

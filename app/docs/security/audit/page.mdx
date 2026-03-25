@@ -1,0 +1,32 @@
+import { Callout } from '@/components/docs/callout';
+
+# Audit Trail
+
+Release confidence in CryptoDesk AI is supported by visible engineering gates, not by vague claims.
+
+<h2 id="ci-gates">CI Gates</h2>
+
+For the published alpha line, the main CI checks cover:
+
+- build verification
+- test verification
+- security audit scanning
+
+The project reached a green state on all three checks before the release package was finalized.
+
+<h2 id="dependency-audits">Dependency Audits</h2>
+
+Dependency posture matters because desktop applications inherit both runtime and packaging risk.
+The release work included audit-focused cleanup and dependency updates, including updater-related
+security hardening before the public alpha package was left in place on GitHub.
+
+<Callout tone="info" title="Observed posture">
+The project documentation and release flow explicitly call out limitations, known warnings, and
+unsigned-alpha behavior instead of pretending those risks do not exist.
+</Callout>
+
+<h2 id="reporting">Reporting</h2>
+
+Vulnerabilities should be reported privately according to the project security policy. Public issue
+trackers are appropriate for normal bugs, but secret-related or exploit-focused reports should be
+handled more carefully.

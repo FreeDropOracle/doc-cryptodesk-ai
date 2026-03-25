@@ -1,0 +1,32 @@
+import { Callout } from '@/components/docs/callout';
+
+# AI Signals
+
+AI signals are designed to be informative, inspectable, and easy to question.
+
+<h2 id="how-signals-work">How Signals Work</h2>
+
+The AI layer produces advisory recommendations such as `buy`, `sell`, or `hold` based on the
+inputs and strategies defined in the current system. What matters most for the user is that the
+signal is presented as guidance, not as a command.
+
+<h2 id="confidence-and-reasoning">Confidence and Reasoning</h2>
+
+Every serious advisory flow should answer two questions:
+
+1. What is the system suggesting?
+2. Why is it suggesting it?
+
+CryptoDesk AI answers both by exposing confidence and reasoning rather than pretending that a
+single label is enough.
+
+<h2 id="risk-filtering">Risk Filtering</h2>
+
+Risk filtering is intentionally visible. If the system decides an advisory is too risky, it can
+downgrade that recommendation to `hold`. This protects the user and teaches them how the model is
+being constrained.
+
+<Callout tone="info" title="Transparency over hype">
+The product avoids black-box AI language on purpose. The goal is trust through clarity, not
+confidence theater.
+</Callout>

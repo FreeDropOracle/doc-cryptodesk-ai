@@ -1,0 +1,40 @@
+import { Callout } from '@/components/docs/callout';
+
+# Trading
+
+The trading screen is designed to teach the workflow safely before it is ever allowed to move real
+capital.
+
+<h2 id="order-types">Order Types</h2>
+
+The current alpha focuses on the basic order-entry concepts users expect:
+
+- side selection
+- pair context
+- size entry
+- notional estimation
+- reference price display
+
+These foundations matter because even a simulation-first product should train users on realistic
+workflow structure.
+
+<h2 id="human-in-the-loop">Human-in-the-Loop</h2>
+
+CryptoDesk AI does not auto-execute AI signals. The user remains in control of every action.
+Trading views and AI advisories are connected by context, not by hidden automation.
+
+<Callout title="No autonomous trading" tone="warning">
+The product goal is explainable assistance, not AI-driven execution. Human review is part of the
+system design.
+</Callout>
+
+<h2 id="risk-management">Risk Management</h2>
+
+Trading-related surfaces are paired with visible safety guardrails:
+
+- simulation-first defaults
+- explicit risk messaging
+- fat-finger protection concepts
+- separation between advisory flows and order submission intent
+
+This is especially important in a fintech context, where clarity is a safety mechanism.

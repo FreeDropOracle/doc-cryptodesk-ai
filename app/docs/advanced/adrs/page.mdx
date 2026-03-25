@@ -1,0 +1,36 @@
+import { Callout } from '@/components/docs/callout';
+
+# Architecture Decisions
+
+CryptoDesk AI uses Architecture Decision Records to keep important technical tradeoffs visible over
+time.
+
+<h2 id="documented-decisions">Documented Decisions</h2>
+
+Current published ADRs include:
+
+- ADR 001: Electron for desktop delivery
+- ADR 003: OS keychain strategy
+- ADR 004: IPC channel design with Zod validation
+- ADR 005: Security-sensitive IPC channel handling
+- ADR 006: CCXT integration strategy
+- ADR 007: Market store integration strategy
+- ADR 008: Portfolio fetch strategy for read-only connectivity
+- ADR 009: Simulation mode strategy
+- ADR 010: Explainable AI integration strategy
+
+Together, these decisions explain how the product stayed aligned with its non-custodial,
+simulation-first, and explainable-AI principles as the codebase grew.
+
+<h2 id="why-adrs-matter">Why ADRs Matter</h2>
+
+ADRs help in three ways:
+
+- they preserve the reasoning behind a choice, not just the outcome
+- they reduce architectural drift across phases
+- they make reviews easier because assumptions are written down
+
+<Callout tone="success" title="Operational benefit">
+The ADR set is one reason the project could move from planning to release readiness without losing
+clarity around its security and execution boundaries.
+</Callout>

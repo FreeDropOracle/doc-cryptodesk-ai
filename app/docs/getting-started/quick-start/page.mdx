@@ -1,0 +1,50 @@
+import { Callout } from '@/components/docs/callout';
+
+# Quick Start
+
+Use this page when you want the shortest reliable path from download to a working first launch.
+
+<h2 id="system-requirements">System Requirements</h2>
+
+- **OS:** Windows 10 or Windows 11, 64-bit
+- **RAM:** 4 GB minimum, 8 GB recommended
+- **Disk:** at least 500 MB free for the release artifact and extracted app
+- **Network:** required for exchange testnet and market data workflows
+
+<h2 id="download-and-verify">Download and Verify</h2>
+
+1. Open the published release page on GitHub.
+2. Download `CryptoDesk AI-1.0.0-alpha.1-win-x64.zip`.
+3. Optionally verify the SHA256 hash against `checksums.txt`.
+
+```powershell
+certutil -hashfile "CryptoDesk AI-1.0.0-alpha.1-win-x64.zip" SHA256
+```
+
+<Callout title="Unsigned alpha build" tone="warning">
+Windows may show an `Unknown Publisher` warning. That is expected for this alpha line because
+code signing is intentionally deferred until later release hardening.
+</Callout>
+
+<h2 id="first-launch">First Launch</h2>
+
+1. Extract the zip archive to a dedicated folder.
+2. Run `CryptoDesk AI.exe`.
+3. Complete the onboarding wizard.
+4. Stay on the simulation-first path until you understand the product flow.
+
+The onboarding sequence covers:
+
+- Welcome and scope
+- Risk acknowledgment
+- Testnet setup expectations
+- Security checks
+- Quick tour
+- Ready-to-explore handoff
+
+<h2 id="what-to-do-next">What To Do Next</h2>
+
+- Open the **Dashboard** to verify market and AI widgets load cleanly
+- Visit **Simulation Mode** to confirm the virtual balance flow works
+- Review the **Security** section of the docs before experimenting further
+- Keep notes for anything confusing during the first session so it can be captured in feedback

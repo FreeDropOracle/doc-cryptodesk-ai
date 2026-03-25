@@ -1,0 +1,42 @@
+import { Callout } from '@/components/docs/callout';
+
+# Development
+
+This page summarizes the practical environment and workflow assumptions used during the alpha
+build-out.
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+- Node `20.11.x`
+- npm `10.x`
+- Windows packaging work benefits from Visual Studio Build Tools
+- GitHub access for releases, issues, and CI visibility
+
+<h2 id="install-and-run">Install and Run</h2>
+
+```powershell
+npm install
+npm run typecheck
+npm test
+npm run dev
+```
+
+These steps reflect the verified alpha development flow after dependency alignment, native module
+rebuilds, and runtime fixes.
+
+<Callout title="Windows note" tone="info">
+If PowerShell execution policy blocks `npm.ps1`, use `npm.cmd` explicitly. The project also
+documented a stable Node 20 path for machines that default to newer incompatible Node versions.
+</Callout>
+
+<h2 id="build-and-release">Build and Release</h2>
+
+The stable Windows alpha packaging path is:
+
+```powershell
+npm run build:win
+```
+
+This produces the Windows x64 zip artifact currently used for alpha distribution. Release work in
+the repository also covers checksums, release notes, GitHub draft flow, beta tester tracking, and
+feedback collection.

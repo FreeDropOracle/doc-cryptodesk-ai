@@ -1,0 +1,58 @@
+import { Callout } from '@/components/docs/callout';
+
+# Introduction
+
+CryptoDesk AI is a **non-custodial desktop trading co-pilot** built around a careful principle:
+users should gain more clarity, not less, when they use AI and trading automation concepts.
+
+<Callout tone="security" title="Security-first posture">
+The current alpha is intentionally conservative. Live trading remains gated while simulation,
+documentation, and release hardening continue to mature.
+</Callout>
+
+<h2 id="what-is-cryptodesk-ai">What is CryptoDesk AI?</h2>
+
+CryptoDesk AI combines real-time market visibility, read-only portfolio preview, simulation
+trading, and explainable AI recommendations inside an Electron desktop application. The goal is
+not to act as a black-box trading bot. The goal is to help users make better-informed decisions
+while preserving strict local-control boundaries.
+
+<h2 id="core-principles">Core Principles</h2>
+
+### Non-Custodial
+
+Credentials are meant to stay on the user machine. The renderer does not receive direct secret
+access, and privileged work flows through preload and main-process validation.
+
+### Simulation-First
+
+New users start with a virtual balance and safe paper-trading flows. The simulation loop exists
+to make learning and verification practical before any future live execution path is considered.
+
+### Explainable AI
+
+Signals are advisory-only. Instead of hiding behind a confidence number alone, the product shows
+reasoning, filtering, and downgrade behavior such as turning a risky signal into `hold`.
+
+### Bilingual Experience
+
+The renderer supports both English and Arabic, including RTL-aware behavior for Arabic where
+appropriate.
+
+<h2 id="who-is-it-for">Who Is It For?</h2>
+
+- Traders who want a desktop-first workflow instead of a browser-only stack
+- Learners who want simulation and risk context before touching real exchange operations
+- Reviewers and contributors who care about architecture, security boundaries, and release discipline
+
+<h2 id="technology-foundation">Technology Foundation</h2>
+
+- **Desktop shell:** Electron 28
+- **Renderer:** React 18 and TypeScript 5 in strict mode
+- **Exchange layer:** CCXT
+- **Storage:** SQLite and local persistence flows
+- **AI runtime:** TensorFlow.js and ONNX Runtime
+- **Validation:** Zod-backed IPC contracts
+
+The result is a product shaped as much by trust boundaries and operational clarity as by visible
+features.

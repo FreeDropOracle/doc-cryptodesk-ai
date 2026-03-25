@@ -1,0 +1,45 @@
+import { Callout } from '@/components/docs/callout';
+
+# Installation
+
+This guide reflects the currently published alpha artifact and the practical packaging state of
+the project.
+
+<h2 id="windows-x64">Windows x64</h2>
+
+The current stable alpha distribution path is a Windows x64 zip package.
+
+Installation steps:
+
+1. Download the latest release archive
+2. Extract it to a folder you control
+3. Run `CryptoDesk AI.exe`
+4. Accept the Windows prompt if needed
+5. Complete onboarding before exploring the rest of the app
+
+```powershell
+Expand-Archive -Path "CryptoDesk AI-1.0.0-alpha.1-win-x64.zip" -DestinationPath "C:\CryptoDesk"
+```
+
+<h2 id="future-platforms">Future Platforms</h2>
+
+macOS and Linux are part of the planned packaging roadmap, but they are not published in the
+current alpha release line. The documentation site keeps those routes visible so contributors and
+testers understand the intended cross-platform direction.
+
+<Callout title="Why only Windows today?" tone="info">
+Windows packaging is the currently validated delivery path. macOS and Linux packaging are still
+pending final environment verification, release rehearsal, and distribution hardening.
+</Callout>
+
+<h2 id="checksum-verification">Checksum Verification</h2>
+
+Verifying the published archive is optional for casual testing, but recommended for technical
+reviewers and security-conscious testers.
+
+```powershell
+certutil -hashfile "CryptoDesk AI-1.0.0-alpha.1-win-x64.zip" SHA256
+```
+
+Compare the result to the value in `checksums.txt`. If the values do not match, delete the
+archive and download it again from the official GitHub release page.

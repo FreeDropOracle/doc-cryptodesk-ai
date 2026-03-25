@@ -1,0 +1,40 @@
+import { Callout } from '@/components/docs/callout';
+
+# Contributing
+
+CryptoDesk AI is open to thoughtful contributions, especially those that improve clarity, safety,
+and release discipline.
+
+<h2 id="contribution-flow">Contribution Flow</h2>
+
+The expected contribution flow is simple:
+
+1. open or review an issue
+2. make focused changes
+3. preserve type safety and architecture boundaries
+4. document behavior and release impact when needed
+
+<h2 id="quality-gates">Quality Gates</h2>
+
+The repository uses a straightforward but meaningful set of checks:
+
+- strict TypeScript type checking
+- Jest test coverage
+- CI build verification
+- dependency audit scanning
+
+Contributions should keep those gates healthy instead of bypassing them.
+
+<h2 id="community-expectations">Community Expectations</h2>
+
+The project includes:
+
+- a Code of Conduct
+- issue templates
+- release operations templates
+- a security policy for sensitive reports
+
+<Callout tone="warning" title="Contribute with the product philosophy in mind">
+Changes should preserve the core posture of the product: non-custodial, simulation-first,
+advisory-only AI, and clear security boundaries across renderer, preload, and main.
+</Callout>

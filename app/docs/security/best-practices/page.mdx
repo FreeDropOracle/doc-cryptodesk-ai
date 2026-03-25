@@ -1,0 +1,36 @@
+import { Callout } from '@/components/docs/callout';
+
+# Best Practices
+
+Good security posture is not just about architecture. It is also about how testers and users
+approach the product in practice.
+
+<h2 id="api-key-hygiene">API Key Hygiene</h2>
+
+- Use dedicated keys for this product, not all-purpose exchange keys
+- Avoid withdrawal permissions whenever possible
+- Never paste secrets into public bug reports or chat logs
+- Treat screenshots and exported logs as potentially sensitive artifacts
+
+<h2 id="testnet-first">Testnet First</h2>
+
+The safest way to evaluate CryptoDesk AI is:
+
+1. start with onboarding
+2. use simulation mode
+3. validate exchange-related behavior on testnet
+4. keep expectations aligned with the current alpha scope
+
+<Callout tone="warning" title="Alpha guidance">
+The current release is not positioned as a production live-trading environment. That limitation is
+intentional and should be respected during testing.
+</Callout>
+
+<h2 id="backup-and-recovery">Backup and Recovery</h2>
+
+While the product is local-first, testers should still operate with discipline:
+
+- keep a clean copy of release notes and checksums
+- record environment details when reporting bugs
+- retain backup plans for local machine failures
+- rotate exchange keys if anything ever feels suspicious
