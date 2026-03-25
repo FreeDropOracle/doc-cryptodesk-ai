@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import { Github, MessageSquare, Send, ShieldAlert } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import { discordUrl, githubRepo } from '@/lib/docs-config';
+import { discordUrl, productRepo } from '@/lib/docs-config';
 
 const channels = [
   {
     title: 'GitHub Issues',
     description: 'Use issues for reproducible bugs, build failures, and concrete improvement requests.',
-    href: `${githubRepo}/issues`,
+    href: `${productRepo}/issues`,
     icon: Github
   },
   {
@@ -19,7 +19,7 @@ const channels = [
   {
     title: 'Release Feedback',
     description: 'Structured alpha notes live in the beta tracker and feedback log inside the main repository.',
-    href: `${githubRepo}/tree/main/docs`,
+    href: `${productRepo}/tree/main/docs`,
     icon: Send
   }
 ] as const;

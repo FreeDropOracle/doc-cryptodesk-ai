@@ -11,7 +11,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { discordUrl, githubRepo, latestReleaseUrl, releasesUrl } from '@/lib/docs-config';
+import { discordUrl, productRepo, latestReleaseUrl, releasesUrl } from '@/lib/docs-config';
 
 const stats = [
   { label: 'Tests Passing', value: '60/60' },
@@ -49,7 +49,7 @@ const features = [
 
 const quickLinks = [
   { title: 'Documentation', href: '/docs', description: 'Get started, features, security, and development guidance.' },
-  { title: 'GitHub Repository', href: githubRepo, description: 'Inspect the source, issues, and workflows on GitHub.' },
+  { title: 'GitHub Repository', href: productRepo, description: 'Inspect the source, issues, and workflows on GitHub.' },
   { title: 'Release Notes', href: '/releases', description: 'Read the published alpha scope, limits, and install path.' },
   { title: 'Community', href: '/community', description: 'Find issue-reporting and feedback channels for the beta.' }
 ] as const;
